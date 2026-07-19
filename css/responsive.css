@@ -1,0 +1,115 @@
+/* =============================================
+   PaliaAPK HUB - Responsive Stylesheet
+   Contains: media queries for tablet, mobile, small screens
+   Scope for this phase: Header + Category Navigation only.
+   ============================================= */
+
+/* ---------- Large Screens / Desktops (>1200px) ---------- */
+/* Default header/nav rules in header.css already target this range. */
+
+/* ---------- Tablets (768px - 1199px) ---------- */
+@media (max-width: 1199px) {
+    .header-container {
+        gap: 16px;
+        padding: 0 18px;
+    }
+
+    .search-form {
+        max-width: 420px;
+    }
+
+    .category-list {
+        padding: 0 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .logo-text {
+        display: none; /* keep only the mark to save space */
+    }
+
+    .search-form {
+        max-width: 320px;
+    }
+}
+
+/* ---------- Mobile Devices (480px - 767px) ---------- */
+@media (max-width: 767px) {
+    :root {
+        --header-height: 64px;
+        --nav-height: 48px;
+    }
+
+    .header-container {
+        gap: 10px;
+        padding: 0 16px;
+    }
+
+    /* The full inline search bar collapses; a duplicate search field
+       lives inside the mobile slide-down panel instead. */
+    .header-search {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .mobile-panel {
+        display: block;
+    }
+
+    .mobile-panel.is-open {
+        max-height: 420px;
+        padding: 0 20px 12px;
+        border-top-color: var(--color-border);
+    }
+
+    .category-list {
+        padding: 0 16px;
+        gap: 8px;
+    }
+
+    .category-pill {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+}
+
+/* ---------- Small Mobile Devices (<480px) ---------- */
+@media (max-width: 480px) {
+    .header-container {
+        gap: 8px;
+    }
+
+    .logo-mark {
+        width: 34px;
+        height: 34px;
+        font-size: 16px;
+    }
+
+    .header-actions {
+        gap: 2px;
+    }
+
+    .icon-btn,
+    .user-avatar-btn,
+    .mobile-menu-toggle {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Notifications move into the mobile panel's account list context;
+       keep the bell but shrink the theme toggle spacing to fit. */
+    .theme-toggle {
+        order: 1;
+    }
+
+    .user-menu {
+        order: 2;
+    }
+
+    .mobile-menu-toggle {
+        order: 3;
+    }
+}
