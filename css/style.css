@@ -1,21 +1,106 @@
 /* =============================================
    PaliaAPK HUB - Global Stylesheet
-   Contains: resets, variables, typography, base layout
    ============================================= */
 
-/* ---------- CSS Reset ---------- */
+.hero{
+max-width:1280px;
+margin:30px auto;
+padding:40px;
+border-radius:32px;
+background:#fff;
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
 
+.badge{
+display:inline-block;
+padding:8px 16px;
+border-radius:50px;
+background:#dffbf3;
+color:#17a97b;
+font-weight:700;
+}
 
-/* ---------- CSS Variables / Theme Colors ---------- */
+.hero h1{
+font-size:52px;
+margin:20px 0 10px;
+}
 
+.hero p{
+color:#666;
+font-size:20px;
+}
 
-/* ---------- Typography ---------- */
+.meta{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+margin:25px 0;
+}
 
+.btns{
+display:flex;
+gap:15px;
+}
 
-/* ---------- Base Layout / Containers ---------- */
+.install{
+background:#22c58b;
+color:#fff;
+}
 
+.details{
+background:#fff;
+border:1px solid #ddd;
+}
 
-/* ---------- Buttons ---------- */
+.btns a{
+padding:15px 28px;
+border-radius:16px;
+text-decoration:none;
+font-weight:bold;
+}
 
+.banner{
+min-height:340px;
+border-radius:24px;
+background:linear-gradient(135deg,#dffbf3,#baf0dd);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:34px;
+color:#14916c;
+}
 
-/* ---------- Utility Classes ---------- */
+.dots{
+text-align:center;
+margin-top:18px;
+}
+
+.dots span{
+display:inline-block;
+width:12px;
+height:12px;
+border-radius:50%;
+background:#cbd5d1;
+margin:0 4px;
+}
+
+.dots .active{
+width:34px;
+border-radius:20px;
+background:#22c58b;
+}
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+}
