@@ -1,15 +1,493 @@
 /* =============================================
    PaliaAPK HUB - Slider Stylesheet
-   Contains: hero slider, banner carousel, slider controls
-   ============================================= */
+   Contains: Hero Slider, Banner Carousel
+============================================= */
 
-/* ---------- Slider Container ---------- */
+/* =============================================
+   HERO SECTION
+============================================= */
 
+.hero{
 
-/* ---------- Slides ---------- */
+    padding:50px 0;
 
+}
 
-/* ---------- Slider Navigation Arrows ---------- */
+.hero-grid{
 
+    display:grid;
 
-/* ---------- Slider Dots / Indicators ---------- */
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.hero-left h1{
+
+    font-size:58px;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+    color:#111827;
+
+}
+
+.hero-left p{
+
+    font-size:18px;
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:40px;
+
+    background:#E7FBF4;
+
+    color:#22C58B;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+/* =============================================
+   HERO SLIDER
+============================================= */
+
+.hero-slider{
+
+    position:relative;
+
+    width:100%;
+
+    height:430px;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:#ffffff;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+/* =============================================
+   SLIDES
+============================================= */
+
+.slide{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:opacity .6s ease;
+
+}
+
+.slide.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    z-index:2;
+
+}
+
+.slide img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* =============================================
+   PREV NEXT BUTTON
+============================================= */
+
+.slider-prev,
+
+.slider-next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.95);
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.25s;
+
+    z-index:20;
+
+}
+
+.slider-prev{
+
+    left:16px;
+
+}
+
+.slider-next{
+
+    right:16px;
+
+}
+
+.slider-prev:hover,
+
+.slider-next:hover{
+
+    background:#22C58B;
+
+    color:#fff;
+
+}
+/* =============================================
+   SLIDER DOTS
+============================================= */
+
+.slider-dots{
+
+    position:absolute;
+
+    bottom:22px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:10px;
+
+    z-index:30;
+
+}
+
+.slider-dots .dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.55);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.slider-dots .dot:hover{
+
+    background:#ffffff;
+
+    transform:scale(1.15);
+
+}
+
+.slider-dots .dot.active{
+
+    width:34px;
+
+    border-radius:20px;
+
+    background:#22C58B;
+
+}
+
+/* =============================================
+   BANNER OVERLAY
+============================================= */
+
+.slide::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        to top,
+
+        rgba(0,0,0,.35),
+
+        rgba(0,0,0,.05),
+
+        transparent
+
+    );
+
+    pointer-events:none;
+
+}
+
+/* =============================================
+   HERO BUTTONS
+============================================= */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-buttons .btn{
+
+    min-width:170px;
+
+    justify-content:center;
+
+    transition:.3s;
+
+}
+
+.hero-buttons .btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 24px rgba(34,197,139,.25);
+
+}
+
+/* =============================================
+   HERO META
+============================================= */
+
+.hero-meta{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin:30px 0;
+
+}
+
+.hero-meta div{
+
+    background:#fff;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    padding:16px 20px;
+
+    min-width:120px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+.hero-meta strong{
+
+    display:block;
+
+    font-size:20px;
+
+    color:#111827;
+
+}
+
+.hero-meta span{
+
+    color:#6B7280;
+
+    font-size:13px;
+
+}
+
+/* =============================================
+   SLIDER HOVER EFFECT
+============================================= */
+
+.hero-slider:hover .slider-prev,
+
+.hero-slider:hover .slider-next{
+
+    opacity:1;
+
+}
+
+.slider-prev,
+
+.slider-next{
+
+    opacity:.85;
+
+}
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+
+@media(max-width:992px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-slider{
+
+height:320px;
+
+}
+
+.hero-left h1{
+
+font-size:42px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:30px 0;
+
+}
+
+.hero-slider{
+
+height:240px;
+
+border-radius:20px;
+
+}
+
+.slider-prev,
+
+.slider-next{
+
+width:40px;
+
+height:40px;
+
+font-size:18px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-buttons .btn{
+
+width:100%;
+
+}
+
+.hero-meta{
+
+gap:12px;
+
+}
+
+.hero-meta div{
+
+flex:1;
+
+min-width:100px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-left h1{
+
+font-size:34px;
+
+}
+
+.hero-left p{
+
+font-size:16px;
+
+}
+
+.hero-slider{
+
+height:200px;
+
+}
+
+.slider-dots{
+
+bottom:14px;
+
+}
+
+.slider-dots .dot{
+
+width:10px;
+
+height:10px;
+
+}
+
+.slider-dots .dot.active{
+
+width:28px;
+
+}
+
+}
