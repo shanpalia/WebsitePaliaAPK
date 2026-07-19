@@ -1,45 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>PaliaAPK HUB - Home</title>
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="PaliaAPK HUB - Download Android APK Apps Safely">
+
+<title>PaliaAPK HUB</title>
+
+<link rel="icon"
+href="assets/logo/favicon.png">
+
 <link rel="stylesheet" href="css/style.css">
+
 <link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/footer.css">
+
 <link rel="stylesheet" href="css/cards.css">
+
 <link rel="stylesheet" href="css/slider.css">
+
+<link rel="stylesheet" href="css/footer.css">
+
 <link rel="stylesheet" href="css/responsive.css">
+
 <link rel="stylesheet" href="css/animations.css">
 
 </head>
+
 <body>
+
+<!-- ========================= -->
+
+<!-- HEADER -->
+
+<!-- ========================= -->
 
 <header class="site-header">
 
 <div class="header-top">
 
-<div class="header-container">
+<div class="container">
 
-<a href="#" class="header-logo">
+<a
+href="index.html"
+class="header-logo">
 
-<div class="logo-mark">P</div>
+<img
+src="assets/logo/logo.png"
+class="logo-img"
+alt="PaliaAPK HUB">
 
-<div class="logo-text">PaliaAPK HUB</div>
+<span>
+
+PaliaAPK HUB
+
+</span>
 
 </a>
 
 <div class="header-search">
 
-<form class="search-form">
+<form
+id="searchForm"
+class="search-form">
 
 <input
-type="text"
-class="search-input"
-placeholder="Search Apps, Games, AI Tools..."
->
 
-<button class="search-clear">✕</button>
+id="searchInput"
+
+type="search"
+
+placeholder="Search Apps, Games, AI Tools..."
+
+autocomplete="off">
+
+<button
+type="submit">
+
+🔍
+
+</button>
 
 </form>
 
@@ -47,27 +93,61 @@ placeholder="Search Apps, Games, AI Tools..."
 
 <div class="header-actions">
 
-<button class="icon-btn">🔔</button>
+<button
+class="icon-btn"
+id="themeToggle">
 
-<button class="icon-btn">🌙</button>
+🌙
 
-<div class="user-menu">
+</button>
 
-<button class="user-avatar-btn">S</button>
+<button
+class="icon-btn">
 
-<ul class="user-dropdown">
+🔔
 
-<li><a href="#">Profile</a></li>
+</button>
 
-<li><a href="#">Downloads</a></li>
+<div class="profile-menu">
 
-<li><a href="#">Bookmarks</a></li>
+<button
+class="avatar-btn">
 
-<li><a href="#">Settings</a></li>
+S
 
-<li><a href="#">Logout</a></li>
+</button>
 
-</ul>
+<div class="profile-dropdown">
+
+<a href="#">
+
+Profile
+
+</a>
+
+<a href="#">
+
+Downloads
+
+</a>
+
+<a href="#">
+
+Bookmarks
+
+</a>
+
+<a href="#">
+
+Settings
+
+</a>
+
+<a href="#">
+
+Logout
+
+</a>
 
 </div>
 
@@ -76,83 +156,249 @@ placeholder="Search Apps, Games, AI Tools..."
 </div>
 
 </div>
+
+</div>
+
+<!-- ========================= -->
+
+<!-- CATEGORY MENU -->
+
+<!-- ========================= -->
 
 <nav class="category-nav">
 
+<div class="container">
+
 <ul class="category-list">
 
-<li><a class="category-pill active" href="#">Home</a></li>
+<li>
 
-<li><a class="category-pill" href="#">AI</a></li>
+<a
+class="active"
+href="#">
 
-<li><a class="category-pill" href="#">Apps</a></li>
+Home
 
-<li><a class="category-pill" href="#">Games</a></li>
+</a>
 
-<li><a class="category-pill" href="#">Social</a></li>
+</li>
 
-<li><a class="category-pill" href="#">Tools</a></li>
+<li>
 
-<li><a class="category-pill" href="#">Photography</a></li>
+<a href="#">
 
-<li><a class="category-pill" href="#">Video</a></li>
+AI
 
-<li><a class="category-pill" href="#">Music</a></li>
+</a>
 
-<li><a class="category-pill" href="#">Education</a></li>
+</li>
+
+<li>
+
+<a href="#">
+
+Apps
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Games
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Tools
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Photography
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Video
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Music
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Education
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+Social
+
+</a>
+
+</li>
 
 </ul>
+
+</div>
 
 </nav>
 
 </header>
 
-<main id="main-content">
+<!-- ========================= -->
 
+<!-- MAIN -->
+
+<!-- ========================= -->
+
+<main>
+
+<!-- ========================= -->
+
+<!-- HERO -->
+
+<!-- ========================= -->
 
 <section class="hero">
 
+<div class="container hero-grid">
+
 <div class="hero-left">
 
-<div class="hero-badge">
+<span class="hero-badge">
+
 Editor's Choice
-</div>
+
+</span>
 
 <h1>
+
 Discover Amazing APKs
+
 </h1>
 
 <p>
-Download trusted Android Apps, Games, AI Tools and Utilities from PaliaAPK HUB.
+
+Download trusted Android Apps,
+
+Games,
+
+AI Tools,
+
+Utilities
+
+and Mods.
+
 </p>
 
-<div class="hero-info">
+<div class="hero-meta">
 
-<div class="info-box">
-<div class="info-title">⭐ Rating</div>
-<div class="info-value">4.9</div>
+<div>
+
+<strong>
+
+⭐ 4.9
+
+</strong>
+
+<span>
+
+Rating
+
+</span>
+
 </div>
 
-<div class="info-box">
-<div class="info-title">⬇ Downloads</div>
-<div class="info-value">100M+</div>
+<div>
+
+<strong>
+
+100M+
+
+</strong>
+
+<span>
+
+Downloads
+
+</span>
+
 </div>
 
-<div class="info-box">
-<div class="info-title">📦 Version</div>
-<div class="info-value">1.0.0</div>
+<div>
+
+<strong>
+
+v1.0
+
+</strong>
+
+<span>
+
+Latest
+
+</span>
+
 </div>
 
 </div>
 
 <div class="hero-buttons">
 
-<a href="#" class="btn install-btn">
-Install Now
+<a
+
+href="#"
+
+class="btn btn-primary">
+
+Install
+
 </a>
 
-<a href="#" class="btn details-btn">
-View Details
+<a
+
+href="#"
+
+class="btn btn-outline">
+
+Details
+
 </a>
 
 </div>
@@ -161,48 +407,48 @@ View Details
 
 <div class="hero-right">
 
-<div class="slider">
+<div class="hero-slider">
 
-<!-- Featured Apps -->
+<div class="slide active">
 
-<section class="featured-section">
+<img
 
-<div class="section-header">
+src="assets/banners/banner1.jpg"
 
-<h2>Featured Apps</h2>
-
-<a href="#">View All</a>
-
-</div>
-
-<div id="featuredApps" class="app-grid">
-
-<!-- Dynamic Apps -->
-
-</div>
-
-</section>
-
-<div class="slide">
-
-<img src="assets/banners/banner2.jpg"
 alt="Banner">
 
 </div>
 
 <div class="slide">
 
-<img src="assets/banners/banner3.jpg"
+<img
+
+src="assets/banners/banner2.jpg"
+
 alt="Banner">
 
 </div>
 
-<button class="prev">
+<div class="slide">
+
+<img
+
+src="assets/banners/banner3.jpg"
+
+alt="Banner">
+
+</div>
+
+<button class="slider-prev">
+
 ❮
+
 </button>
 
-<button class="next">
+<button class="slider-next">
+
 ❯
+
 </button>
 
 <div class="slider-dots">
@@ -219,23 +465,383 @@ alt="Banner">
 
 </div>
 
+</div>
+
 </section>
-</main>
+<!-- ===================================== -->
+<!-- FEATURED APPS -->
+<!-- ===================================== -->
+
+<section class="apps-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>Featured Apps</h2>
+
+                <p>Hand-picked apps from our editors</p>
+
+            </div>
+
+            <a href="category.html?type=featured" class="view-all">
+
+                View All →
+
+            </a>
+
+        </div>
+
+        <div
+            id="featuredApps"
+            class="apps-grid">
+
+            <!-- Dynamic Apps From app.js -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- TRENDING APPS -->
+<!-- ===================================== -->
+
+<section class="apps-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>Trending Apps</h2>
+
+                <p>Most downloaded this week</p>
+
+            </div>
+
+            <a href="category.html?type=trending"
+
+                class="view-all">
+
+                View All →
+
+            </a>
+
+        </div>
+
+        <div
+            id="trendingApps"
+            class="apps-grid">
+
+            <!-- Dynamic Apps -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- LATEST APPS -->
+<!-- ===================================== -->
+
+<section class="apps-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>Latest Apps</h2>
+
+                <p>Recently added applications</p>
+
+            </div>
+
+            <a href="category.html?type=latest"
+
+                class="view-all">
+
+                View All →
+
+            </a>
+
+        </div>
+
+        <div
+            id="latestApps"
+            class="apps-grid">
+
+            <!-- Dynamic Apps -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- BROWSE CATEGORIES -->
+<!-- ===================================== -->
+
+<section class="browse-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>Browse Categories</h2>
+
+                <p>Choose your favourite category</p>
+
+            </div>
+
+        </div>
+
+        <div class="category-grid">
+
+            <a href="category.html?cat=ai" class="category-card">
+                🤖
+                <span>AI</span>
+            </a>
+
+            <a href="category.html?cat=apps" class="category-card">
+                📱
+                <span>Apps</span>
+            </a>
+
+            <a href="category.html?cat=games" class="category-card">
+                🎮
+                <span>Games</span>
+            </a>
+
+            <a href="category.html?cat=tools" class="category-card">
+                🛠
+                <span>Tools</span>
+            </a>
+
+            <a href="category.html?cat=social" class="category-card">
+                💬
+                <span>Social</span>
+            </a>
+
+            <a href="category.html?cat=photo" class="category-card">
+                📷
+                <span>Photography</span>
+            </a>
+
+            <a href="category.html?cat=video" class="category-card">
+                🎬
+                <span>Video</span>
+            </a>
+
+            <a href="category.html?cat=music" class="category-card">
+                🎵
+                <span>Music</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- NEWSLETTER -->
+<!-- ===================================== -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <h2>
+
+                Stay Updated
+
+            </h2>
+
+            <p>
+
+                Get notified when new APKs are published.
+
+            </p>
+
+            <form
+                id="newsletterForm">
+
+                <input
+
+                    type="email"
+
+                    placeholder="Enter your email"
+
+                    required>
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===================================== -->
+<!-- FOOTER -->
+<!-- ===================================== -->
 
 <footer class="site-footer">
 
-<div class="footer-container">
+    <div class="container">
 
-<p>© 2026 PaliaAPK HUB</p>
+        <div class="footer-grid">
 
-</div>
+            <!-- Brand -->
+
+            <div class="footer-col">
+
+                <img
+                    src="assets/logo/logo.png"
+                    class="footer-logo"
+                    alt="PaliaAPK HUB">
+
+                <h3>PaliaAPK HUB</h3>
+
+                <p>
+
+                    Download trusted Android Apps, Games,
+                    AI Tools and Utilities.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-col">
+
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="search.html">Search</a></li>
+
+                    <li><a href="category.html">Categories</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Support -->
+
+            <div class="footer-col">
+
+                <h4>Support</h4>
+
+                <ul>
+
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                    <li><a href="#">Report App</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Social -->
+
+            <div class="footer-col">
+
+                <h4>Follow Us</h4>
+
+                <div class="social-links">
+
+                    <a href="#">Facebook</a>
+
+                    <a href="#">Telegram</a>
+
+                    <a href="#">GitHub</a>
+
+                    <a href="#">YouTube</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 PaliaAPK HUB. All Rights Reserved.
+
+            </p>
+
+            <p>
+
+                Designed & Developed by <strong>ShanPalia</strong>
+
+            </p>
+
+        </div>
+
+    </div>
 
 </footer>
+
+<!-- ================================ -->
+<!-- Back To Top -->
+<!-- ================================ -->
+
+<button
+id="backToTop"
+class="back-to-top">
+
+⬆
+
+</button>
+
+</main>
+
+<!-- ================================ -->
+<!-- JavaScript -->
+<!-- ================================ -->
+
 <script src="js/theme.js"></script>
-<script src="js/slider.js"></script>
+
 <script src="js/search.js"></script>
+
 <script src="js/ui.js"></script>
+
+<script src="js/slider.js"></script>
+
 <script src="js/app.js"></script>
 
 </body>
+
 </html>
