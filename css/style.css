@@ -1,106 +1,239 @@
-/* =============================================
-   PaliaAPK HUB - Global Stylesheet
-   ============================================= */
+/* ==========================================
+   PaliaAPK HUB - Global Style
+========================================== */
 
-.hero{
-max-width:1280px;
-margin:30px auto;
-padding:40px;
-border-radius:32px;
-background:#fff;
-box-shadow:0 12px 35px rgba(0,0,0,.08);
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.badge{
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Inter,Arial,sans-serif;
+
+    background:#f6fbf9;
+
+    color:#1f2937;
+
+    line-height:1.6;
+
+}
+
+/* Variables */
+
+:root{
+
+--primary:#22c58b;
+
+--primary-dark:#18a674;
+
+--primary-light:#dffbf3;
+
+--text:#1f2937;
+
+--muted:#6b7280;
+
+--border:#e5e7eb;
+
+--card:#ffffff;
+
+--shadow:0 12px 35px rgba(0,0,0,.08);
+
+--radius:24px;
+
+}
+
+/* Links */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/* Images */
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+/* Container */
+
+.container{
+
+max-width:1280px;
+
+margin:auto;
+
+padding:0 20px;
+
+}
+
+/* Buttons */
+
+.btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:15px 28px;
+
+border-radius:18px;
+
+font-weight:600;
+
+transition:.25s;
+
+cursor:pointer;
+
+}
+
+.btn-primary{
+
+background:var(--primary);
+
+color:#fff;
+
+}
+
+.btn-primary:hover{
+
+background:var(--primary-dark);
+
+}
+
+.btn-outline{
+
+background:#fff;
+
+border:1px solid var(--border);
+
+}
+
+.btn-outline:hover{
+
+background:#f3f4f6;
+
+}
+
+/* Hero */
+
+.hero{
+
+padding:50px 0;
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+background:#fff;
+
+padding:45px;
+
+border-radius:32px;
+
+box-shadow:var(--shadow);
+
+}
+
+.hero-badge{
+
 display:inline-block;
-padding:8px 16px;
+
+background:var(--primary-light);
+
+color:var(--primary-dark);
+
+padding:8px 18px;
+
 border-radius:50px;
-background:#dffbf3;
-color:#17a97b;
-font-weight:700;
+
+font-weight:600;
+
+margin-bottom:20px;
+
 }
 
 .hero h1{
-font-size:52px;
-margin:20px 0 10px;
+
+font-size:58px;
+
+line-height:1.1;
+
+margin-bottom:20px;
+
 }
 
 .hero p{
-color:#666;
+
 font-size:20px;
+
+color:var(--muted);
+
+margin-bottom:25px;
+
 }
 
-.meta{
+.hero-meta{
+
 display:flex;
-gap:18px;
+
+gap:25px;
+
+margin-bottom:30px;
+
 flex-wrap:wrap;
-margin:25px 0;
+
 }
 
-.btns{
-display:flex;
-gap:15px;
-}
+.hero-meta div{
 
-.install{
-background:#22c58b;
-color:#fff;
-}
+background:#f8fafc;
 
-.details{
-background:#fff;
-border:1px solid #ddd;
-}
+padding:15px 18px;
 
-.btns a{
-padding:15px 28px;
 border-radius:16px;
-text-decoration:none;
-font-weight:bold;
+
+min-width:110px;
+
 }
 
-.banner{
-min-height:340px;
-border-radius:24px;
-background:linear-gradient(135deg,#dffbf3,#baf0dd);
+.hero-meta strong{
+
+display:block;
+
+font-size:20px;
+
+}
+
+.hero-buttons{
+
 display:flex;
-align-items:center;
-justify-content:center;
-font-size:34px;
-color:#14916c;
-}
 
-.dots{
-text-align:center;
-margin-top:18px;
-}
-
-.dots span{
-display:inline-block;
-width:12px;
-height:12px;
-border-radius:50%;
-background:#cbd5d1;
-margin:0 4px;
-}
-
-.dots .active{
-width:34px;
-border-radius:20px;
-background:#22c58b;
-}
-
-@media(max-width:900px){
-
-.hero{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:38px;
-}
+gap:15px;
 
 }
